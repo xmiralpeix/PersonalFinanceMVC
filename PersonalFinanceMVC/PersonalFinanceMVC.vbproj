@@ -334,6 +334,7 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AdminLTE\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

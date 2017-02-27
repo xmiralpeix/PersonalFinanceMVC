@@ -43,11 +43,11 @@ Public Class ApplicationUserManager
 
         ' Configure validation logic for passwords
         manager.PasswordValidator = New PasswordValidator With {
-            .RequiredLength = 6,
-            .RequireNonLetterOrDigit = True,
-            .RequireDigit = True,
-            .RequireLowercase = True,
-            .RequireUppercase = True
+            .RequiredLength = 4,
+            .RequireNonLetterOrDigit = False,
+            .RequireDigit = False,
+            .RequireLowercase = False,
+            .RequireUppercase = False
         }
 
         ' Configure user lockout defaults
