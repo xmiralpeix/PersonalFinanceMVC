@@ -43,13 +43,7 @@ Public Class LoginViewModel
 
     <Required>
     <Display(Name:="User Name")>
-    <EmailAddress>
     Public Property UserName As String
-
-    <Required>
-    <Display(Name:="Email")>
-    <EmailAddress>
-    Public Property Email As String
 
     <Required>
     <DataType(DataType.Password)>
@@ -58,6 +52,7 @@ Public Class LoginViewModel
 
     <Display(Name:="Remember me?")>
     Public Property RememberMe As Boolean
+
 End Class
 
 Public Class RegisterViewModel
