@@ -84,3 +84,5 @@ C:\Users\xavim\OneDrive\Documentos\PersonalFinanceMVC\PersonalFinanceMVC\obj\Deb
 C:\Users\xavim\OneDrive\Documentos\PersonalFinanceMVC\PersonalFinanceMVC\obj\Debug\PersonalFinanceMVC.dll
 C:\Users\xavim\OneDrive\Documentos\PersonalFinanceMVC\PersonalFinanceMVC\obj\Debug\PersonalFinanceMVC.xml
 C:\Users\xavim\OneDrive\Documentos\PersonalFinanceMVC\PersonalFinanceMVC\obj\Debug\PersonalFinanceMVC.pdb
+C:\Users\xavim\OneDrive\Documentos\PersonalFinanceMVC\PersonalFinanceMVC\obj\Debug\PersonalFinanceMVC.Migrations.InitialCreate.resources
+C:\Users\xavim\OneDrive\Documentos\PersonalFinanceMVC\PersonalFinanceMVC\obj\Debug\PersonalFinanceMVC.Migrations.addfullname.resources

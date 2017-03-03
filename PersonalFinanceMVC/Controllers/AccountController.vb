@@ -131,6 +131,7 @@ Public Class AccountController
     Public Async Function Register(model As RegisterViewModel) As Task(Of ActionResult)
         If ModelState.IsValid Then
             Dim user = New ApplicationUser() With {
+                .FullName = model.FullName,
                 .UserName = model.UserName,
                 .Email = model.Email
             }
