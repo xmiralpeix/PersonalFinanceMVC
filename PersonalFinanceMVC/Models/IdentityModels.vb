@@ -23,6 +23,21 @@ Public Class ApplicationUser
 
 End Class
 
+Public Class ApplicationRole
+    Inherits IdentityRole
+
+    Public Sub New()
+        MyBase.New()
+
+    End Sub
+
+    Public Sub New(ByVal roleName As String)
+        MyBase.New(roleName)
+
+    End Sub
+
+End Class
+
 Public Class ApplicationDbContext
     Inherits IdentityDbContext(Of ApplicationUser)
     Public Sub New()

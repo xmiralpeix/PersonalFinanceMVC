@@ -227,6 +227,7 @@
     <Compile Include="App_Start\Startup.Auth.vb" />
     <Compile Include="Controllers\AccountController.vb" />
     <Compile Include="Controllers\ManageController.vb" />
+    <Compile Include="Controllers\RoleController.vb" />
     <Compile Include="CustomAuthorizeAttribute.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
@@ -239,10 +240,15 @@
       <DependentUpon>201703031725494_addfullname.vb</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201703031725494_addfullname.vb" />
+    <Compile Include="Migrations\201703101745151_role.Designer.vb">
+      <DependentUpon>201703101745151_role.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703101745151_role.vb" />
     <Compile Include="Migrations\Configuration.vb" />
     <Compile Include="Models\AccountViewModels.vb" />
     <Compile Include="Models\IdentityModels.vb" />
     <Compile Include="Models\ManageViewModels.vb" />
+    <Compile Include="Models\RoleViewModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -267,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703031725494_addfullname.resx">
       <DependentUpon>201703031725494_addfullname.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703101745151_role.resx">
+      <DependentUpon>201703101745151_role.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -2331,6 +2340,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Role\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

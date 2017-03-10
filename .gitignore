@@ -244,6 +244,8 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 .svn/
+.vs/
+
 
 # Other
 dotfuscated/
@@ -254,4 +256,6 @@ dotfuscated/
 *.old
 *.pdf
 *.chm
+*.suo
+*.user
 Thumbs.db

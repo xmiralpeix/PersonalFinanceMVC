@@ -12,6 +12,7 @@ Partial Public Class Startup
         app.CreatePerOwinContext(AddressOf ApplicationDbContext.Create)
         app.CreatePerOwinContext(Of ApplicationUserManager)(AddressOf ApplicationUserManager.Create)
         app.CreatePerOwinContext(Of ApplicationSignInManager)(AddressOf ApplicationSignInManager.Create)
+        app.CreatePerOwinContext(Of ApplicationRoleManager)(AddressOf ApplicationRoleManager.Create)
 
         ' Enable the application to use a cookie to store information for the signed in user
         ' and to use a cookie to temporarily store inforation about a user logging in with a third party login provider

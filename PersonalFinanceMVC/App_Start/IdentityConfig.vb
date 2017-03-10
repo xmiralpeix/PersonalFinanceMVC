@@ -76,6 +76,26 @@ Public Class ApplicationUserManager
 
 End Class
 
+
+Public Class ApplicationRoleManager
+    Inherits RoleManager(Of ApplicationRole)
+
+
+    Public Sub New(ByVal store As IRoleStore(Of ApplicationRole, String))
+        MyBase.New(store)
+
+    End Sub
+
+    Public Shared Function Create(options As IdentityFactoryOptions(Of ApplicationRoleManager), context As IOwinContext) As ApplicationRoleManager
+
+        Dim appManager As New ApplicationRoleManager(New RoleStore(Of ApplicationRole)(context.Get(Of ApplicationDbContext)))
+        Return appManager
+
+    End Function
+
+
+End Class
+
 ' Configure the application sign-in manager which is used in this application.
 Public Class ApplicationSignInManager
     Inherits SignInManager(Of ApplicationUser, String)
