@@ -8,10 +8,17 @@ Namespace Migrations
 
         Public Overrides Sub Up()
             AddColumn("dbo.AspNetRoles", "Discriminator", Function(c) c.String(nullable:=False, maxLength:=128))
+
+
+
+
         End Sub
 
         Public Overrides Sub Down()
             DropColumn("dbo.AspNetRoles", "Discriminator")
+
+
+
         End Sub
     End Class
 End Namespace

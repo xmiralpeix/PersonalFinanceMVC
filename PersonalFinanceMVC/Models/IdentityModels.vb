@@ -47,4 +47,6 @@ Public Class ApplicationDbContext
     Public Shared Function Create() As ApplicationDbContext
         Return New ApplicationDbContext()
     End Function
+
+    Public Property RoleViewModels As System.Data.Entity.DbSet(Of RoleViewModel)
 End Class

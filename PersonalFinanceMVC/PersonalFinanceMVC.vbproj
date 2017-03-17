@@ -244,6 +244,10 @@
       <DependentUpon>201703101745151_role.vb</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201703101745151_role.vb" />
+    <Compile Include="Migrations\201703171641309_role1.Designer.vb">
+      <DependentUpon>201703171641309_role1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703171641309_role1.vb" />
     <Compile Include="Migrations\Configuration.vb" />
     <Compile Include="Models\AccountViewModels.vb" />
     <Compile Include="Models\IdentityModels.vb" />
@@ -276,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703101745151_role.resx">
       <DependentUpon>201703101745151_role.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703171641309_role1.resx">
+      <DependentUpon>201703171641309_role1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -2307,6 +2314,11 @@
     <Content Include="Views\Shared\_LoginPartial.vbhtml" />
     <Content Include="Views\Shared\_Layout.vbhtml" />
     <Content Include="Views\Shared\AuthorizeFailed.vbhtml" />
+    <Content Include="Views\Role\Index.vbhtml" />
+    <Content Include="Views\Role\Edit.vbhtml" />
+    <Content Include="Views\Role\Details.vbhtml" />
+    <Content Include="Views\Role\Delete.vbhtml" />
+    <Content Include="Views\Role\Create.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -2340,7 +2352,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Role\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -75,5 +75,29 @@ Namespace Controllers
         End Function
 
 
+        Public Async Function Details(id As String) As Threading.Tasks.Task(Of ActionResult)
+
+            Dim role = Await RoleManager.FindByIdAsync(id)
+
+            Return View(New RoleViewModel(role))
+
+        End Function
+
+        Public Async Function Delete(id As String) As Threading.Tasks.Task(Of ActionResult)
+            Dim role = Await RoleManager.FindByIdAsync(id)
+
+            Return View(New RoleViewModel(role))
+
+        End Function
+
+        Public Async Function DeleteConfirmed(id As String) As Threading.Tasks.Task(Of ActionResult)
+            Dim role = Await RoleManager.FindByIdAsync(id)
+            Await RoleManager.DeleteAsync(role)
+
+            Return RedirectToAction("Index")
+        End Function
+
+
+
     End Class
 End Namespace

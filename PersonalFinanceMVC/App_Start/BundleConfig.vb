@@ -22,6 +22,12 @@ Public Module BundleConfig
         bundles.Add(New StyleBundle("~/Content/css").Include(
                   "~/Content/bootstrap.css",
                   "~/Content/site.css"))
+
+
+        bundles.Add(New StyleBundle("~/dist/css").Include(
+                  "~/dist/css/AdminLTE.min.css"))
+
+
     End Sub
 End Module
 
